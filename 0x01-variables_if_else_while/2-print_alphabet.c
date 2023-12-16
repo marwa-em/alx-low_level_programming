@@ -10,10 +10,10 @@ char i;
 
 for (i = 'a'; i <= 'z'; i++)
 
-	putchar(i);
-	putchar('\');
+putchar(i);
+putchar('\\');
 
-}
+
 return (0);
-
+}
 
