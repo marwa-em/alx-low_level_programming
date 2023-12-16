@@ -1,0 +1,20 @@
+ilphabt.c:15:9: error: missing terminating ' character [-Werror]
+   15 | putchar('\');
+      |         ^
+4-print_alphabt.c:15:9: error: missing terminating ' character
+   15 | putchar('\');
+      |         ^~~~~
+4-print_aclearlphabt.c:16:1: error: expected expression before ‘return’
+   16 | return (0);
+      | ^~~~~~
+4-print_alphabt.c:16:12: error: expected ‘;’ before ‘}’ token
+   16 | return (0);
+      |            ^
+      |            ;
+......
+   21 | }
+      | ~           
+4-print_alphabt.c:21:1: error: control reaches end of non-void function [-Werror=return-type]
+   21 | }
+      | ^
+cc1: all warnings being treated as errors
