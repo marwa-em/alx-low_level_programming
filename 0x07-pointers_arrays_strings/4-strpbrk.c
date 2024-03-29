@@ -1,35 +1,27 @@
 #include "main.h"
 
 /**
-  *_strspn - main function
+  *_strpbrk - main function of the prototype
   *
-  *@s: Function parameter
+  *@s: function parameter
   *
-  *@accept: Function parameter
+  *@accept: Fuunction parameter
   *
   *Return: Always 0.
   */
-unsigned int _strspn(char *s, char *accept)
+
+char *_strpbrk(char *s, char *accept)
 {
+	int k, j;
 
-	unsigned int _strspn(char *s, char *accept);
-	unsigned int i = 0;
-	int k;
-
-	while (*s)
+	for (k = 0; s[k] != '\0'; k++)
 	{
-	for (k = 0; accept[k]; k++)
+	for (j = 0; accept[j] != '\0'; j++)
 	{
-	if (*s == accept[k])
-	{
-	i++;
-	break;
+	if (s[k] == accept[j])
+	return (s + k);
 	}
-	else if (accept[k + 1] == '\0')
-	return (i);
 	}
-	s++;
-	}
-	return (i);
+	return (0);
 }
 
